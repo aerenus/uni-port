@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DLLBildirimi"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DLL geçiş bildirim modülü ile DLL, DBUpdate ve set geçiş bildirimlerini tüm kullanıcılara iletebilirsiniz."
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:id="@+id/proje"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Proje"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:hint="Bir proje seçiniz"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="Geçiş tipi seçiniz"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/tur"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <CheckBox
+                android:id="@+id/checkbox_dll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DLL geçişi"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/checkbox_dbupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DBUpdate geçişi"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/checkbox_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Config geçişi"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/checkbox_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set geçişi"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="Geçiş tarihi seçiniz"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Henüz tarih seçilmedi"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnPick"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="TARİH SEÇİNİZ"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Geçişe ait yorum (varsa)"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="KAYDET" />
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

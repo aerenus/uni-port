@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action1_tumu"
+        android:title="Tüm bildirimler"/>
+    <item android:id="@+id/action1_sms"
+        android:title="SMS bildirimleri"/>
+    <item android:id="@+id/action1_dll"
+        android:title="DLL bildirimleri"/>
+    <item android:id="@+id/action1_tfs"
+        android:title="TFS bildirimleri"/>
+    <item android:id="@+id/action1_nobet"
+        android:title="Nöbetçi bildirimleri"/>
+    <item android:id="@+id/action1_yonet"
+        android:title="Yönetici/Grup bildirimi"/>
+</menu>

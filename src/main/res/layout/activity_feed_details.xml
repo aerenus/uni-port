@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedDetails"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                app:srcCompat="@drawable/ic_baseline_code_25" />
+
+            <TextView
+                android:id="@+id/feedsayfa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Azure DevOps"
+                android:textSize="16dp"
+                android:layout_weight="0.8"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/feedkategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/feedbaslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baslik"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/feedproje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proje"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/feedpaket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paket"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/feedversiyondetay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Versiyon v1."
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/feedacandetay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acan Kisi"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/feedtarihdetay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarih 10/10/10"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/feedbil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bildirim detayı"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/feedbildirim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="feedbildirim"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
